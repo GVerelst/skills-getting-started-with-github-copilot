@@ -59,19 +59,110 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f8fbff 0%, #f7f9fc 100%);
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.08);
+}
+
+.activity-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: #0066cc;
 }
 
-.activity-card p {
+.activity-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.activity-description {
   margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.activity-schedule {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.participants-list {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.participant-email {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.participant-remove:hover {
+  background-color: #fecaca;
+}
+
+.participants-list .empty-state {
+  color: #6b7280;
+  font-style: italic;
+  background-color: #f9fafb;
 }
 
 .form-group {
